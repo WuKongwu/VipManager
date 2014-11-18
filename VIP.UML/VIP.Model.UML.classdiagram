@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c2b7b3fd-8f02-4984-80a5-dd660b7bc5d5" name="VIP.Model.UML" linkedPackageId="0fecb696-68dd-4c06-8ee8-3e6071706e06" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a70c355d-c103-41ee-9050-2c574f489b6d">
+      <profileInstance Id="0ca1920f-9cc9-4784-be8a-80fcc01d0d66" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c53b0829-49aa-41f3-9c0e-6568f0c3f931">
+      <profileInstance Id="dc6a1933-78be-48b2-8ca9-d8112bd27468" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6f311c2c-d383-430d-a5a4-dff7d31b43a0" name="ObjectModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a6bab6d4-f7bb-47de-b35f-616cb7487527" />
+        <ownedAttributesInternal>
+          <property Id="034ca89d-eea1-42bf-8d0b-9a74f18cf4ad" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6579e9cc-6fbd-4b02-914c-4d95b99737d2" />
+          </property>
+          <property Id="6904e10a-1819-40b6-aed0-b1544a5e120a" name="CreateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5cd495f6-8c7b-4d96-8e93-e7461afc56fa" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5fcd2334-ad62-4224-b257-a567129735b9" name="所有模型的基类" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="99d3ef61-4264-4b8a-932a-ebf14d69e149" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2d48910f-e500-450e-b580-5af55745cff9" name="EntityObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="18afa31b-a9b4-4b9a-86c1-e5911e532412" />
+        <generalsInternal>
+          <generalization Id="88d84f27-a48c-4f24-a516-bf2807a3356b" isSubstitutable="false">
+            <classMoniker Id="6f311c2c-d383-430d-a5a4-dff7d31b43a0" LastKnownName="ObjectModel" />
+            <elementDefinition Id="da10edde-e777-42d1-abd8-bc65f83268aa" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="57e1c670-4f29-47c4-90e6-23d70f47ac94" name="UpDateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="294479e1-f981-4b49-9e9d-46d504c5fc30" />
+          </property>
+          <property Id="b856ac5f-d31b-47b6-8641-1ed6d60625eb" name="OwnUser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8290b99-0ee0-4551-9d4c-f79d72b8fea0" />
+          </property>
+          <property Id="6018dcda-c866-411d-b567-5b30f807cd7a" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1cceea4a-7ede-4f9c-ab3d-13ed54ed5e6d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="71bc0fae-91bb-4164-b734-4251ab8334bf" name="实体模型基类" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="359deba7-8086-4b5b-8b22-791329944fd0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5082b14d-f6c6-4f98-8fce-e70d60d38a6b" name="LinkObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b66a473c-ac18-472b-b83f-26b4e9269b6e" />
+        <generalsInternal>
+          <generalization Id="cf6758ea-65d3-411d-b073-627b864cd536" isSubstitutable="false">
+            <classMoniker Id="6f311c2c-d383-430d-a5a4-dff7d31b43a0" LastKnownName="ObjectModel" />
+            <elementDefinition Id="397730a1-00e1-45ec-acc3-d88714e1d1dd" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="1b093c4b-f465-4c1d-b734-4ab293d3b8fa" name="ParentID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7db16378-d0ea-4895-b640-68587e313226" />
+          </property>
+          <property Id="311828c3-d915-49e4-a88a-cba8912d0e41" name="RelationUrl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15239971-fcc2-4027-981a-8a442c5fd11a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a80e3e05-87c6-4963-90d9-3428c4185818" name="关系模型基类" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0dcbbe64-1a7b-4dd2-9486-c09aa0f1fb3f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de87bc47-8972-4071-b74e-076f9c6f302b" name="LinkEntityObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1e14d74b-0781-446a-bdd2-8d844cec4c5e" />
+        <generalsInternal>
+          <generalization Id="4650e57e-addf-4c09-ab6e-78ea1c731ae1" isSubstitutable="false">
+            <classMoniker Id="5082b14d-f6c6-4f98-8fce-e70d60d38a6b" LastKnownName="LinkObject" />
+            <elementDefinition Id="6662a40a-33f6-42be-836d-3d5864959487" />
+          </generalization>
+          <generalization Id="764e0aa8-e5a1-4193-a303-0e3b81e5893f" isSubstitutable="false">
+            <classMoniker Id="2d48910f-e500-450e-b580-5af55745cff9" LastKnownName="EntityObject" />
+            <elementDefinition Id="872fe7dc-2b4e-4a4c-a66b-725a6d73bf01" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0fecb696-68dd-4c06-8ee8-3e6071706e06" name="VIP.UML">
+    <elementDefinition Id="98be410c-17eb-4264-93c0-f2cb3849e677" />
+  </package>
+</logicalClassDesignerModel>

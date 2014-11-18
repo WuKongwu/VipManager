@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8f4de465-3d01-4350-880b-5b5e1830acd1" name="UMLSysUser" linkedPackageId="68b9782e-35df-4f49-bb2c-38d23aa32a93" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="189100bd-c785-42f5-9bfb-06120d50eee3">
+      <profileInstance Id="b52cceb0-73e7-4823-8ad8-ad0ca253e5bd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e97cce9b-ae9e-4b45-b013-9097ecf79c87">
+      <profileInstance Id="6640aaa0-414d-4641-9b87-d42555c85a34" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="706a7ba1-595d-4ba4-b27f-ac908241cda2" name="UMLSysUser" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0c6673f0-26ad-4520-b3f1-20712b54097d" />
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="68b9782e-35df-4f49-bb2c-38d23aa32a93" name="VIP.UML">
+    <elementDefinition Id="98be410c-17eb-4264-93c0-f2cb3849e677" />
+  </package>
+</activityRootModel>
