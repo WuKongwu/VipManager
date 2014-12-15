@@ -1,0 +1,4 @@
+D:\Elite_Code\VIP\VipManager\Vip.Core\Logging\bin\Debug\Base.Logging.dll
+D:\Elite_Code\VIP\VipManager\Vip.Core\Logging\bin\Debug\Base.Logging.pdb
+D:\Elite_Code\VIP\VipManager\Vip.Core\Logging\obj\Debug\Base.Logging.dll
+D:\Elite_Code\VIP\VipManager\Vip.Core\Logging\obj\Debug\Base.Logging.pdb

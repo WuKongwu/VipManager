@@ -7,3 +7,12 @@ E:\VIP\VIP\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Models.pdb
 E:\VIP\VIP\VIP.Base\VIP.Base.Business\obj\Debug\ResolveAssemblyReference.cache
 E:\VIP\VIP\VIP.Base\VIP.Base.Business\obj\Debug\VIP.Base.Business.dll
 E:\VIP\VIP\VIP.Base\VIP.Base.Business\obj\Debug\VIP.Base.Business.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\obj\Debug\VIP.Base.Business.csprojResolveAssemblyReference.cache
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\obj\Debug\VIP.Base.Business.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\obj\Debug\VIP.Base.Business.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Business.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Business.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Interface.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Models.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Interface.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Business\bin\Debug\VIP.Base.Models.pdb

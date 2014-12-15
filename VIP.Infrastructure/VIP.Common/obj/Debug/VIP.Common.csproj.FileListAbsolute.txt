@@ -3,3 +3,7 @@ E:\VIP\VIP\VIP.Infrastructure\VIP.Common\bin\Debug\VIP.Common.pdb
 E:\VIP\VIP\VIP.Infrastructure\VIP.Common\obj\Debug\ResolveAssemblyReference.cache
 E:\VIP\VIP\VIP.Infrastructure\VIP.Common\obj\Debug\VIP.Common.dll
 E:\VIP\VIP\VIP.Infrastructure\VIP.Common\obj\Debug\VIP.Common.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Infrastructure\VIP.Common\bin\Debug\VIP.Common.dll
+D:\Elite_Code\VIP\VipManager\VIP.Infrastructure\VIP.Common\bin\Debug\VIP.Common.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Infrastructure\VIP.Common\obj\Debug\VIP.Common.dll
+D:\Elite_Code\VIP\VipManager\VIP.Infrastructure\VIP.Common\obj\Debug\VIP.Common.pdb

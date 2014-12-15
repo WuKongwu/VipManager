@@ -5,3 +5,10 @@ E:\VIP\VIP\VIP.Base\VIP.Base.Models\bin\Debug\VIP.Base.Interface.dll
 E:\VIP\VIP\VIP.Base\VIP.Base.Models\bin\Debug\VIP.Base.Interface.pdb
 E:\VIP\VIP\VIP.Base\VIP.Base.Models\obj\Debug\VIP.Base.Models.dll
 E:\VIP\VIP\VIP.Base\VIP.Base.Models\obj\Debug\VIP.Base.Models.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\obj\Debug\VIP.Base.Models.csprojResolveAssemblyReference.cache
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\obj\Debug\VIP.Base.Models.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\obj\Debug\VIP.Base.Models.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\bin\Debug\VIP.Base.Models.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\bin\Debug\VIP.Base.Models.pdb
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\bin\Debug\VIP.Base.Interface.dll
+D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Models\bin\Debug\VIP.Base.Interface.pdb
