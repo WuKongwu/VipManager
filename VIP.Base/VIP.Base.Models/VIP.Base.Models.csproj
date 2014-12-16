@@ -40,9 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbModels\BaseDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DbModels\User\MUser.cs" />
+    <Compile Include="DbModels\MUser\MUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VIP.Base.Interface\VIP.Base.Interface.csproj">

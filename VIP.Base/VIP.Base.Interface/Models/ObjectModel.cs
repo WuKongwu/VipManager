@@ -10,7 +10,7 @@ namespace VIP.Base.Interface.Models
     /// </summary>
     public class ObjectModel
     {
-        public string ID { get; set; }
+        public int Id { get; set; }
 
         public DateTime CreateTime { get; set; }
     }

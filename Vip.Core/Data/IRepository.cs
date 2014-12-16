@@ -5,16 +5,14 @@ using System.Linq.Expressions;
 
 namespace Vip.Data {
     public interface IRepository<T> {
-        void Create(T entity);
+        void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
-        void Flush();
-        T Get(int id);
-        T Get(Expression<Func<T, bool>> predicate);
-        IQueryable<T> Table { get; }
-        int Count(Expression<Func<T, bool>> predicate);
-        IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate);
-        //IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order);
-        //IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order, int skip, int count);
+        void Delete(Expression<Func<T, bool>> where);
+        T GetById(int Id);
+        T GetById(string Id);
+        T Get(Expression<Func<T, bool>> where);
+        IEnumerable<T> GetAll();
+        IEnumerable<T> GetMany(Expression<Func<T, bool>> where);   
     }
 }

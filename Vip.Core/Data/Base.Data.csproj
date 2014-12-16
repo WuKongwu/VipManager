@@ -33,9 +33,6 @@
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
@@ -49,8 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\MUserConfigurations.cs" />
+    <Compile Include="DataContext.cs" />
+    <Compile Include="IRepositories\IMUserRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\MUserRepository.cs" />
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +59,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\VIP.Base\VIP.Base.Interface\VIP.Base.Interface.csproj">
+      <Project>{bff98bc2-f06d-4b18-89cc-3cfa851bb2ea}</Project>
+      <Name>VIP.Base.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VIP.Base\VIP.Base.Models\VIP.Base.Models.csproj">
+      <Project>{fd94dc18-d7c6-4069-8f47-246d68166584}</Project>
+      <Name>VIP.Base.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logging\Base.Logging.csproj">
       <Project>{24cee2e6-5722-485e-b921-599586d91497}</Project>
       <Name>Base.Logging</Name>

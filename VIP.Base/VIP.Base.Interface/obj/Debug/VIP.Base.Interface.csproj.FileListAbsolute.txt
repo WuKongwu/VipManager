@@ -7,3 +7,8 @@ D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Interface\obj\Debug\VIP.Base.Inte
 D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Interface\obj\Debug\VIP.Base.Interface.pdb
 D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Interface\bin\Debug\VIP.Base.Interface.dll
 D:\Elite_Code\VIP\VipManager\VIP.Base\VIP.Base.Interface\bin\Debug\VIP.Base.Interface.pdb
+D:\Elite_Code\VipManager\VIP.Base\VIP.Base.Interface\bin\Debug\VIP.Base.Interface.dll
+D:\Elite_Code\VipManager\VIP.Base\VIP.Base.Interface\bin\Debug\VIP.Base.Interface.pdb
+D:\Elite_Code\VipManager\VIP.Base\VIP.Base.Interface\obj\Debug\VIP.Base.Interface.csprojResolveAssemblyReference.cache
+D:\Elite_Code\VipManager\VIP.Base\VIP.Base.Interface\obj\Debug\VIP.Base.Interface.dll
+D:\Elite_Code\VipManager\VIP.Base\VIP.Base.Interface\obj\Debug\VIP.Base.Interface.pdb

@@ -9,173 +9,62 @@ using System.Data.Entity;
 namespace Vip.Data {
     public class Repository<T> : DbContext, IRepository<T> where T : class
     {
+        private DataContext dataContext;
+        private readonly IDbSet<T> dbSet;
      
         public Repository() {
             Logger = NullLogger.Instance;
+            dbSet = dataContext.Set<T>();
         }
 
         public Vip.Logging.ILogger Logger { get; set; }
 
-        public void Create(T entity)
+        public void Add(T entity)
         {
-            this.Create(entity);
+            dbSet.Add(entity);         
         }
 
         public void Update(T entity)
         {
-            this.Update(entity);
+            dbSet.Attach(entity);
+            dataContext.Entry(entity).State = EntityState.Modified;
         }
 
         public void Delete(T entity)
         {
-            this.Delete(entity);
+            dbSet.Remove(entity);
         }
-
-      
-        public void Flush()
+        
+        public void Delete(Expression<Func<T, bool>> where)
         {
-            this.Flush();
+            IEnumerable<T> objects = dbSet.Where<T>(where).AsEnumerable();
+            foreach (T obj in objects)
+                dbSet.Remove(obj);
         }
 
-        public T Get(int id)
+        public T GetById(int Id)
         {
-          return  this.Get(id);
+            return dbSet.Find(Id);
         }
 
-        public T Get(Expression<Func<T, bool>> predicate)
+        public T GetById(string Id)
         {
-            throw new NotImplementedException();
+            return dbSet.Find(Id);
         }
 
-        public IQueryable<T> Table
+        public T Get(Expression<Func<T, bool>> where)
         {
-            get { throw new NotImplementedException(); }
+            return dbSet.Where(where).FirstOrDefault();
         }
 
-        public int Count(Expression<Func<T, bool>> predicate)
+        public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return dbSet.ToList();
         }
 
-        public IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate)
+        public IEnumerable<T> GetMany(Expression<Func<T, bool>> where)
         {
-            throw new NotImplementedException();
+            return dbSet.Where(where).ToList();
         }
-
-
-        //public virtual IQueryable<T> Table
-        //{
-        //    get { return Session.QueryOver<T>(); }//.Cacheable()
-        //}
-
-        //#region IRepository<T> Members
-
-        //void IRepository<T>.Create(T entity) {
-        //    Create(entity);
-        //}
-
-        //void IRepository<T>.Update(T entity) {
-        //    Update(entity);
-        //}
-
-        //void IRepository<T>.Delete(T entity) {
-        //    Delete(entity);
-        //}
-
-        //void IRepository<T>.Copy(T source, T target) {
-        //    Copy(source, target);
-        //}
-
-        //void IRepository<T>.Flush() {
-        //    Flush();
-        //}
-
-        //T IRepository<T>.Get(int id) {
-        //    return Get(id);
-        //}
-
-        //T IRepository<T>.Get(Expression<Func<T, bool>> predicate) {
-        //    return Get(predicate);
-        //}
-
-        //IQueryable<T> IRepository<T>.Table
-        //{
-        //    get { return Table; }
-        //}
-
-        //int IRepository<T>.Count(Expression<Func<T, bool>> predicate) {
-        //    return Count(predicate);
-        //}
-
-        //IEnumerable<T> IRepository<T>.Fetch(Expression<Func<T, bool>> predicate) {
-        //    return Fetch(predicate).ToReadOnlyCollection();
-        //}
-
-        //IEnumerable<T> IRepository<T>.Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order) {
-        //    return Fetch(predicate, order).ToReadOnlyCollection();
-        //}
-
-        //IEnumerable<T> IRepository<T>.Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order, int skip,
-        //                                    int count) {
-        //    return Fetch(predicate, order, skip, count).ToReadOnlyCollection();
-        //}
-
-        //#endregion
-
-        //public virtual T Get(int id) {
-        //    return Session.Get<T>(id);
-        //}
-
-        //public virtual T Get(Expression<Func<T, bool>> predicate) {
-        //    return Fetch(predicate).SingleOrDefault();
-        //}
-
-        //public virtual void Create(T entity) {
-        //    Logger.Debug("Create {0}", entity);
-        //    Session.Save(entity);
-        //}
-
-        //public virtual void Update(T entity) {
-        //    Logger.Debug("Update {0}", entity);
-        //    Session.Evict(entity);
-        //    Session.Merge(entity);
-        //}
-
-        //public virtual void Delete(T entity) {
-        //    Logger.Debug("Delete {0}", entity);
-        //    Session.Delete(entity);            
-        //}
-
-        //public virtual void Copy(T source, T target) {
-        //    Logger.Debug("Copy {0} {1}", source, target);
-        //    var metadata = Session.SessionFactory.GetClassMetadata(typeof (T));
-        //    var values = metadata.GetPropertyValues(source, EntityMode.Poco);
-        //    metadata.SetPropertyValues(target, values, EntityMode.Poco);
-        //}
-
-        //public virtual void Flush() {
-        //    Session.Flush();
-        //}
-
-        //public virtual int Count(Expression<Func<T, bool>> predicate) {
-        //    return Fetch(predicate).Count();
-        //}
-
-        //public virtual IQueryable<T> Fetch(Expression<Func<T, bool>> predicate) {
-        //    return Table.Where(predicate);
-        //}
-
-        //public virtual IQueryable<T> Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order) {
-        //    var orderable = new Orderable<T>(Fetch(predicate));
-        //    order(orderable);
-        //    return orderable.Queryable;
-        //}
-
-        //public virtual IQueryable<T> Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order, int skip,
-        //                                   int count) {
-        //    return Fetch(predicate, order).Skip(skip).Take(count);
-        //}
-
-
     }
 }

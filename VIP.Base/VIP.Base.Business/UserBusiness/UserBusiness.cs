@@ -15,22 +15,4 @@ namespace VIP.Base.Business.UserBusiness
          
         }
     }
-
-    public class diaoyonglei
-    {
-        public void ssss()
-        {
-            //using ()
-            //{
-            //BaseDb db = new BaseDb()
-            //UserBusiness business = new UserBusiness();
-            //business.Create(db, new MUser { });
-            //business.Addserssss(db);
-
-
-
-            //db.SaveChange();
-        }
-        //}
-    }
 }
