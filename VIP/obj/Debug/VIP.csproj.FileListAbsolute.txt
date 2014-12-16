@@ -1,5 +1,0 @@
-E:\VIP\VIP\VIP\bin\VIP.dll
-E:\VIP\VIP\VIP\bin\VIP.pdb
-E:\VIP\VIP\VIP\obj\Debug\ResolveAssemblyReference.cache
-E:\VIP\VIP\VIP\obj\Debug\VIP.dll
-E:\VIP\VIP\VIP\obj\Debug\VIP.pdb
