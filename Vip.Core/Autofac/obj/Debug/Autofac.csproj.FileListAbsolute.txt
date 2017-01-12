@@ -1,7 +1,0 @@
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\obj\Debug\Autofac.csprojResolveAssemblyReference.cache
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\bin\Debug\Autofac.dll
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\bin\Debug\Autofac.pdb
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\bin\Debug\EntityFramework.dll
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\bin\Debug\EntityFramework.xml
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\obj\Debug\Autofac.dll
-D:\Elite_Code\VIP\VipManager\Vip.Core\Autofac\obj\Debug\Autofac.pdb
