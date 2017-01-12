@@ -1,3 +1,8 @@
 /obj/
 /bin/
+/packages/
+/Debug/
 *.cache
+*.dll
+*.xml
+*.pdb
